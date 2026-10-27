@@ -1,0 +1,59 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    background-image: url("ai.jpg");
+    background-size: cover;       /* Image ko poori screen par fit karega */
+    background-repeat: no-repeat; /* Repeat hone se rokega */
+    background-position: center;  /* Image ko center mein set karega */
+    background-attachment: fixed; /* Scroll karne par bhi background fixed rahega */
+}
+
+/* Button styling */
+button {
+    /* Size & Padding (Bada aur saaf look ke liye) */
+    padding: 14px 32px;
+    font-size: 18px;
+    font-weight: 600;
+    
+    /* Text Color */
+    color: #ffffff;
+    
+    /* Unique Color (Modern Gradient Background) */
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    
+    /* Border & Corners */
+    border: none;
+    border-radius: 30px; /* Smooth rounded shape */
+    
+    /* Shadow (Visual Depth) */
+    box-shadow: 0 4px 15px rgba(37, 117, 252, 0.4);
+    
+    /* Smooth Transition */
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Hover Effect (Mouse le jaane par effect) */
+button:hover {
+    transform: translateY(-3px) scale(1.03); /* Chota sa lift up effect */
+    box-shadow: 0 8px 25px rgba(37, 117, 252, 0.6);
+    
+}
+
+/* Click Effect */
+button:active {
+    transform: translateY(1px);
+}
+.button-container {
+    text-align: center; /* Isse andar ka button center mein ho jayega */
+}
+body {
+    display: flex;
+    justify-content: center; /* Horizontally (beech mein) laane ke liye */
+    align-items: center;     /* Vertically (upar-neeche beech mein) laane ke liye */
+    height: 100vh;           /* Poori screen ki height lene ke liye */
+}
